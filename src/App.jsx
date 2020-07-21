@@ -1,6 +1,8 @@
 import React from "react"
 
 import "./App.css"
+import ParOuImpar from "./components/condicional/ParOuImpar"
+import TabelaProtudos from "./components/repeticao/TabelaProdutos"
 import ListaAluno from "./components/repeticao/ListaAluno"
 import FamiliaMembro from "./components/basicos/FamiliaMembro"
 import Familia from "./components/basicos/Familia"
@@ -28,6 +30,14 @@ export default () =>
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className="Cards">
+            <Card titulo="#8 - Condicional" color="#2E7D32">
+                    <ParOuImpar numero={20} ></ParOuImpar>
+                </Card>
+
+            <Card titulo="#7 - Tabela de Repetição" color="#00BCD4">
+                    <TabelaProtudos></TabelaProtudos>
+                </Card>
+
                 <Card titulo="#6 - Repetição" color="#A7226E">
                     <ListaAluno></ListaAluno>
                 </Card>
